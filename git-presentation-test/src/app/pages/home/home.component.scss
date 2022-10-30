@@ -4,31 +4,29 @@
     font-family: 'Primary';
 }
 
-.info-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .info-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+            margin-top: 3rem;
+            font-size: 26px;
 
-.title {
-    margin-top: 3rem;
-}
+        }
 
-.subtitle {
-    margin-top: 1rem
-}
-
-img {
-    width: 50%;
-}
-span{
-color: #010100;
-}
-
-code{
-padding: 20px;
-background-color: black;
-color: white;
-border-radius: 5px;
-}
+        .subtitle {
+            margin-top: 1rem;
+            font-size: 22px;
+        }
+        img{
+        width: 50%;
+        margin-top: 100px;
+        }
+    }
+    code{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    }

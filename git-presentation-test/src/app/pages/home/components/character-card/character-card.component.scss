@@ -4,6 +4,11 @@ p {
 }
 
 .card {
+    height: 100%;
+
+    img {
+        height: 300px;
+    }
 
     .card-secondary {
         font-size: 12px;
