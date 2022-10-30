@@ -1,5 +1,5 @@
 <div *ngIf="character" class="card" style="width: 20rem;">
-    <img class="card-img-top" src="assets/images.jpeg" alt="Card image cap">
+    <img class="card-img-top" [src]="character?.image" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{character?.docs[0]?.name}}</h5>
       <p class="card-text"> Race: {{character?.docs[0]?.race}}</p>

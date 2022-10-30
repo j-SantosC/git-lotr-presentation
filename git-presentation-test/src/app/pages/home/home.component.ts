@@ -12,7 +12,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.lotrService.getCharacters().subscribe(character => {
+    // Gimli 
+
+    this.lotrService.getCharacter('5cd99d4bde30eff6ebccfd23').subscribe((character: any) => {
+      character = { ...character, image: 'assets/gimli.webp' }
       this.characters.push(character)
     });
   }
