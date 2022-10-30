@@ -15,9 +15,10 @@ export class HomeComponent implements OnInit {
 
     this.getCharacter(characters.gimli, 'bases', 'assets/images/gimli.webp')
     this.getCharacter(characters.frodo, 'tricks', 'assets/images/frodo.jpg')
-
+    this.getCharacter(characters.gandalf, 'rebase', 'assets/images/gandalf.jpg')
 
   }
+
   getCharacter(character: any, chapter: string, image: string) {
     this.lotrService.getCharacter(character).subscribe((character: any) => {
       character = { ...character, image: image, name: character.docs[0].name + ' ' + chapter }
