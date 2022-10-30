@@ -1,3 +1,23 @@
-.layout{
-background-color: #955757;
+.layout {
+    background-color: #955757;
+    color: white;
+    font-family: 'Primary';
+
+    .info-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+            margin-top: 3rem;
+        }
+
+        .subtitle {
+            margin-top: 1rem
+        }
+        img{
+        width: 50%;
+        margin-top: 100px;
+        }
+    }
 }

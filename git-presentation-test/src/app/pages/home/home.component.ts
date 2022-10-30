@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
     // Gimli 
 
     this.lotrService.getCharacter('5cd99d4bde30eff6ebccfd23').subscribe((character: any) => {
-      character = { ...character, image: 'assets/gimli.webp' }
+      character = { ...character, image: 'assets/images/gimli.webp' }
       this.characters.push(character)
     });
   }
