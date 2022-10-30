@@ -1,15 +1,32 @@
 <div class="layout p-5">
     <h3 class="text-light mb-5 text-center">Aprende GIT con ESDLA</h3>
-
-    <div *ngFor="let character of characters" class="characters">
-        <app-character-card [character]="character"></app-character-card>
+    <div class="character-container d-flex flex-wrap">
+        <div *ngFor="let character of characters" class="character mx-3">
+            <app-character-card [character]="character"></app-character-card>
+        </div>
     </div>
     <hr>
     <div class="info-block bases-gimli">
         <h3 class="title">Algunas bases con Gimli</h3>
         <div class="subtitle font-primary">Working Area - Staging Area - Repo</div>
-            <img class="mt-4" src="assets/images/git-gud.png" alt="">
-            <img src="assets/images/git-add.png" alt="">
-        
+        <img class="mt-4" src="assets/images/git-gud.png" alt="">
+        <img src="assets/images/git-add.png" alt="">
+
+    </div>
+    <hr>
+    <div class="info-block trucos-frodo">
+        <h3 class="title">Trucos con Fordo</h3>
+        <div class="subtitle font-primary mb-4">Comandos Terminal</div>
+        <code>
+                git diff myfile.txt
+            </code>
+        <div class="text mt-2"> Nos muestra los cambios guardados en un archivo concreto</div>
+        <div class="subtitle font-primary mb-4">Amend</div>
+        <code>
+            git commit --amend
+        </code>
+        <div class="text mt-2"> Te permite combinar los cambios preparados con el commit anterior en lugar de crear un commit nuevo</div>
+        <div class="text mt-2"> También puede usarse para editar el anterior mensaje del commit sin cambiar la instantánea</div>
+        <div class="text mt-2"> El commit corregido será una entidad nueva con su propia referencia</div>
     </div>
 </div>

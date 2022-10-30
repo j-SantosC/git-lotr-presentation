@@ -18,6 +18,12 @@ export class HomeComponent implements OnInit {
       character = { ...character, image: 'assets/images/gimli.webp' }
       this.characters.push(character)
     });
-  }
+    // Frodo 
 
+    this.lotrService.getCharacter('5cd99d4bde30eff6ebccfc15').subscribe((character: any) => {
+      character = { ...character, image: 'assets/images/frodo.jpg' }
+      this.characters.push(character)
+    });
+  }
 }
+
