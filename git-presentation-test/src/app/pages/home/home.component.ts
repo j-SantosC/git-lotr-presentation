@@ -18,6 +18,13 @@ export class HomeComponent implements OnInit {
       character = { ...character, image: 'assets/images/gimli.webp' }
       this.characters.push(character)
     });
+
+    // Gandalf 
+
+    this.lotrService.getCharacter('5cd99d4bde30eff6ebccfea0').subscribe((character: any) => {
+      character = { ...character, image: 'assets/images/gandalf.jpg' }
+      this.characters.push(character)
+    });
   }
 
 }
