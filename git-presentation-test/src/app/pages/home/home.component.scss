@@ -13,11 +13,13 @@
         .title {
             margin-top: 3rem;
             font-size: 28px;
+            border-bottom: 2px solid white;
         }
 
         .subtitle {
             font-size: 24px;
-            margin-top: 1rem
+            margin-top: 1rem;
+
         }
         .text{
         max-width: 700px;
@@ -33,4 +35,12 @@
         color: white;
         border-radius: 5px;
     }
+
+.hilight{
+    border: 3px solid rgb(94, 174, 94);
+    background-color: rgb(94, 174, 94);
+    border-radius: 5px;
+    padding: 3rem;
+    margin-bottom: 200px;
+}
 
