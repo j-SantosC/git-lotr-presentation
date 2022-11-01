@@ -1,15 +1,22 @@
 <div class="layout p-5">
-    <h3 class="text-light mb-5 text-center">Aprende GIT con ESDLA</h3>
-
+    <h3 class="text-light mb-5 text-center">Aprende GIT Avanzado con ESDLA</h3>
+    <h3 class="title my-3">Capítulos</h3>
     <div *ngFor="let character of characters" class="characters">
         <app-character-card [character]="character"></app-character-card>
     </div>
-    <hr>
+    <hr class="my-5">
     <div class="info-block bases-gimli">
         <h3 class="title">Algunas bases con Gimli</h3>
-        <div class="subtitle font-primary">Working Area - Staging Area - Repo</div>
-            <img class="mt-4" src="assets/images/git-gud.png" alt="">
-            <img src="assets/images/git-add.png" alt="">
-        
+        <div class="subtitle font-primary mb-4">Working Area - Staging Area - Repo</div>
+        <div class="text"> <span> Workig area</span>: This area is also known as the “untracked” area of git</div>
+        <code class="my-3">
+            git status
+        </code>
+        <div class="text"> <span> Staging area</span>: The Staging Area is when git starts tracking and saving changes that occur in files</div>
+        <div class="text"> <span> Repositoty</span>: Pues el repo con los commits</div>
+        <img class="mt-4" src="assets/images/git-gud.png" alt="">
+        <div class="subtitle font-primary mt-4">git add</div>
+        <img class="mt-4" src="assets/images/git-add.png" alt="">
+
     </div>
 </div>

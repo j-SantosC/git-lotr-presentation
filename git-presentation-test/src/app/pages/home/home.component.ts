@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { characters } from 'src/app/core/enums/characters.constants';
 import { LotrService } from 'src/app/core/services/lotr.service';
 
 @Component({
@@ -12,12 +13,14 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // Gimli 
+    this.getCharacter(characters.gimli, 'bases')
 
-    this.lotrService.getCharacter('5cd99d4bde30eff6ebccfd23').subscribe((character: any) => {
-      character = { ...character, image: 'assets/images/gimli.webp' }
+
+  }
+  getCharacter(character: any, chapter: string) {
+    this.lotrService.getCharacter(characters.gimli).subscribe((character: any) => {
+      character = { ...character, image: 'assets/images/gimli.webp', name: character.docs[0].name + ' ' + chapter }
       this.characters.push(character)
     });
   }
-
 }

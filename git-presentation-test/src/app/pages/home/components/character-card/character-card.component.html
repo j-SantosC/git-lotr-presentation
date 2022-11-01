@@ -1,7 +1,7 @@
 <div *ngIf="character" class="card text-dark" style="width: 20rem;">
     <img class="card-img-top" [src]="character.image" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">{{character.docs[0].name}}</h5>
+      <h5 class="card-title">{{character.name}}</h5>
       <p class="card-text"> Race: {{character.docs[0].race}}</p>
       <p class="card-secondary"> Birth: {{character.docs[0].birth}}</p>
       <p class="card-secondary mb-3"> Death: {{character.docs[0].death}}</p>
