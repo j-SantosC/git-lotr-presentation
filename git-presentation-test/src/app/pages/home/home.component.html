@@ -1,5 +1,6 @@
 <div class="layout p-5">
     <h3 class="text-light mb-5 text-center">Aprende GIT Avanzado con ESDLA</h3>
+    <h3 class="title my-3">Capítulos</h3>
     <div class="characters-container d-flex flex-wrap">
         <div *ngFor="let character of characters" class="character mx-3">
             <app-character-card [character]="character"></app-character-card>
@@ -22,11 +23,12 @@
         <div class="text mb-5"> - Claridad cuando usamos git log <br> - Beneficios a la hora de operaciones de regresión
             (más
             adelante con Sauron)</div>
-        <div class="subtitle font-primary mb-3">No reorganices el historial público</div>
+        <div class="subtitle font-primary mb-3">⛔️ No reorganices el historial público ⛔️</div>
         <div class="text mb-5">La fusión mediante cambio de base sustituiría las confirmaciones antiguas por las nuevas
             y
             parecerá que esa parte del historial de tu proyecto se ha desvanecido de repente</div>
-        <div class="subtitle font-primary mb-3">Rebase interactivo --i</div>
+
+        <div class="title font-primary mb-3">Rebase interactivo --i</div>
         <div class="text mb-5">Se abre un editor en el que puedes introducir comandos (descritos a continuación) para
             cada
             confirmación que se fusiona mediante cambio de base</div>
@@ -41,7 +43,9 @@
             x, exec = run command (the rest of the line) using shell<br>
             d, drop = remove commit<br>
         </div>
-        <div class="text">Esto les da la oportunidad de combinar confirmaciones insignificantes, eliminar las obsoletas
+        <div class="text">Parece que Fork tiene una interfaz preparada para este comando</div>
+        <img class="my-5" src="assets/images/fork-rebase.png" alt="">
+        <div class="text hilight">Esto les da la oportunidad de combinar confirmaciones insignificantes, eliminar las obsoletas
             y asegurarse de que todo lo demás está en orden</div>
     </div>
 
