@@ -1,5 +1,6 @@
 <div class="layout p-5">
     <h3 class="text-light mb-5 text-center">Aprende GIT con ESDLA</h3>
+    <h3 class="title my-3">Capítulos</h3>
     <div class="character-container d-flex flex-wrap">
         <div *ngFor="let character of characters" class="character mx-3">
             <app-character-card [character]="character"></app-character-card>
@@ -24,6 +25,7 @@
             instantánea</div>
         <div class="text mt-2"> El commit corregido será una entidad nueva con su propia referencia</div>
         <div class="subtitle font-primary mb-4">Squash</div>
+        <img class="mb-5" src="assets/images/squash.png" alt="" style="height:200px ;width:200px">
         <div class="text mt-2"> Nos permite combinar los últimos commits en uno solo</div>
         <div class="text mt-2"> Va asociado al git rebase interactivo (más adelante con Gandalf)</div>
         <code class="mt-3">
