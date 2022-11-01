@@ -1,22 +1,40 @@
 <div class="layout p-5">
     <h3 class="text-light mb-5 text-center">Aprende GIT Avanzado con ESDLA</h3>
     <h3 class="title my-3">Capítulos</h3>
-    <div *ngFor="let character of characters" class="characters">
-        <app-character-card [character]="character"></app-character-card>
+    <div class="character-container d-flex flex-wrap">
+        <div *ngFor="let character of characters" class="character mx-3">
+            <app-character-card [character]="character"></app-character-card>
+        </div>
     </div>
     <hr class="my-5">
-    <div class="info-block bases-gimli">
-        <h3 class="title">Algunas bases con Gimli</h3>
-        <div class="subtitle font-primary mb-4">Working Area - Staging Area - Repo</div>
-        <div class="text"> <span> Workig area</span>: This area is also known as the “untracked” area of git</div>
-        <code class="my-3">
-            git status
+    <div class="info-block reset-sauron">
+        <h3 class="title">Reset, Revert y Checkout con Sauron</h3>
+        <h3 class="subtitle">Reset</h3>
+        <div class="text mb-3"> Para deshacer cambios que no han sido compartidos con nadie más</div>
+        <code class="mb-3">
+            git reset HEAD~2
         </code>
-        <div class="text"> <span> Staging area</span>: The Staging Area is when git starts tracking and saving changes that occur in files</div>
-        <div class="text"> <span> Repositoty</span>: Pues el repo con los commits</div>
-        <img class="mt-4" src="assets/images/git-gud.png" alt="">
-        <div class="subtitle font-primary mt-4">git add</div>
-        <img class="mt-4" src="assets/images/git-add.png" alt="">
+        <ul style="max-width:400px ;">
+            <li>--soft – The staged snapshot and working directory are not altered in any way.</li>
+            <li>--mixed – The staged snapshot is updated to match the specified commit, but the working directory is not
+                affected. This is the default option. (por defecto)</li>
+            <li>--hard – The staged snapshot and the working directory are both updated to match the specified commit.
+            </li>
+        </ul>
+        <div class="text my-3">Tambien funciona a nivel de archivo! Pude estar interesante 🤔</div>
+        <code class="my-4">
+            git reset HEAD~2 foo.ts
+        </code>
+        <h3 class="subtitle">Checkout</h3>
+        <div class="text mb-3">Puede ser usado a nivel de rama , commit o archivo</div>
+        <div class="text mb-3">Útil para revisar viejos commits</div>
+        <div class="text">OJITO - DETACHED HEAD 🫠❕❕</div>
+        <img src="assets/images/detached-head.svg" class="my-5" style="height:450px ;" alt="">
+        <div class="text my-3">always create a new branch before adding commits to a detached HEAD</div>
+        <h3 class="subtitle">💚 Revert 💚</h3>
+        <div class="text">Crea un nuevo comit invirtiendo los cambios del commit señalado</div>
+        <div class="text">El únnico Public friendly</div>
+        <img src="assets/images/revert.svg" alt="" class="my-5">
 
     </div>
 </div>

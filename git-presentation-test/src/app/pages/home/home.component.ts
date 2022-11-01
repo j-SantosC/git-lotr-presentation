@@ -13,7 +13,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.getCharacter(characters.gimli, 'bases', 'assets/images/gimli.webp')
+    this.getCharacter(characters.sauron, 'reset y revert', 'assets/images/sauron.webp')
+
 
   }
 
