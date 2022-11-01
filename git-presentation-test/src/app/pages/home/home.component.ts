@@ -13,13 +13,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.getCharacter(characters.gimli, 'bases')
-
+    this.getCharacter(characters.gimli, 'bases', 'assets/images/gimli.webp')
 
   }
-  getCharacter(character: any, chapter: string) {
-    this.lotrService.getCharacter(characters.gimli).subscribe((character: any) => {
-      character = { ...character, image: 'assets/images/gimli.webp', name: character.docs[0].name + ' ' + chapter }
+
+  getCharacter(character: any, chapter: string, image: string) {
+    this.lotrService.getCharacter(character).subscribe((character: any) => {
+      character = { ...character, image: image, name: character.docs[0].name + ' ' + chapter }
       this.characters.push(character)
     });
   }
