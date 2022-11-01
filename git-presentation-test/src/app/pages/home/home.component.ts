@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { characters } from 'src/app/core/enums/characters.constants';
 import { LotrService } from 'src/app/core/services/lotr.service';
 
 @Component({
@@ -12,18 +13,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // Gimli 
+    this.getCharacter(characters.frodo, 'tricks', 'assets/images/frodo.jpg')
 
-    this.lotrService.getCharacter('5cd99d4bde30eff6ebccfd23').subscribe((character: any) => {
-      character = { ...character, image: 'assets/images/gimli.webp' }
-      this.characters.push(character)
-    });
-    // Frodo 
 
-    this.lotrService.getCharacter('5cd99d4bde30eff6ebccfc15').subscribe((character: any) => {
-      character = { ...character, image: 'assets/images/frodo.jpg' }
+  }
+  getCharacter(character: any, chapter: string, image: string) {
+    this.lotrService.getCharacter(character).subscribe((character: any) => {
+      character = { ...character, image: image, name: character.docs[0].name + ' ' + chapter }
       this.characters.push(character)
     });
   }
+
 }
 

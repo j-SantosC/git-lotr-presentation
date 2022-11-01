@@ -15,8 +15,9 @@
     </div>
     <hr>
     <div class="info-block trucos-frodo">
-        <h3 class="title">Trucos con Fordo</h3>
+        <h3 class="title">Trucos con Frodo</h3>
         <div class="subtitle font-primary mb-4">Comandos Terminal</div>
+        <div class="text mb-3">(sobrevivir sin vsc)</div>
         <code>
                 git diff myfile.txt
             </code>
@@ -25,8 +26,16 @@
         <code>
             git commit --amend
         </code>
-        <div class="text mt-2"> Te permite combinar los cambios preparados con el commit anterior en lugar de crear un commit nuevo</div>
-        <div class="text mt-2"> También puede usarse para editar el anterior mensaje del commit sin cambiar la instantánea</div>
+        <div class="text mt-2"> Te permite combinar los cambios preparados con el commit anterior en lugar de crear un
+            commit nuevo</div>
+        <div class="text mt-2"> También puede usarse para editar el anterior mensaje del commit sin cambiar la
+            instantánea</div>
         <div class="text mt-2"> El commit corregido será una entidad nueva con su propia referencia</div>
+        <div class="subtitle font-primary mb-4">Squash</div>
+        <div class="text mt-2"> Nos permite combinar los últimos commits en uno solo</div>
+        <div class="text mt-2"> Va asociado al git rebase interactivo (más adelante con Gandalf)</div>
+        <code class="mt-3">
+             git rebase -i HEAD~3
+        </code>
     </div>
 </div>
