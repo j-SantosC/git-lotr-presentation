@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.getCharacter(characters.gimli, 'bases', 'assets/images/gimli.webp')
+    this.getCharacter(characters.bilbo, 'Conceptos', 'assets/images/bilbo.jpeg')
 
   }
 
