@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
     this.getCharacter(characters.frodo, 'tricks', 'assets/images/frodo.jpg')
     this.getCharacter(characters.gandalf, 'rebase', 'assets/images/gandalf.jpg')
     this.getCharacter(characters.bilbo, 'Conceptos', 'assets/images/bilbo.jpeg')
+    this.getCharacter(characters.sauron, 'reset y revert', 'assets/images/sauron.webp')
 
   }
 
