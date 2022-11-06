@@ -1,0 +1,56 @@
+<div class="info-block rebase-gandalf layout">
+  <h3 class="title">Rebase con Gandalf</h3>
+  <div class="text mb-5">
+    Es el proceso de mover o combinar una secuencia de confirmaciones en una
+    nueva confirmación base.
+  </div>
+  <div class="text mb-3">Alternativa principal a git merge</div>
+  <img src="assets/images/rebase.svg" alt="" />
+  <div class="subtitle font-primary mb-3">Beneficios Rebase</div>
+  <div class="text">
+    El motivo principal por el que llevar a cabo una fusión mediante cambio de
+    base es para mantener un historial del proyecto lineal
+  </div>
+  <div class="text">No se genera el commit del merge</div>
+  <img src="assets/images/gadalfgif.gif" alt="" />
+  <div class="subtitle font-primary mb-3">
+    Y que más dará tener el historial limpio?
+  </div>
+  <div class="text mb-5">
+    - Claridad cuando usamos git log <br />
+    - Beneficios a la hora de operaciones de regresión (más adelante con Sauron)
+  </div>
+  <div class="subtitle font-primary mb-3">
+    ⛔️ No reorganices el historial público ⛔️
+  </div>
+  <div class="text mb-5">
+    La fusión mediante cambio de base sustituiría las confirmaciones antiguas
+    por las nuevas y parecerá que esa parte del historial de tu proyecto se ha
+    desvanecido de repente
+  </div>
+
+  <div class="title font-primary mb-3">Rebase interactivo --i 🔥🔥🔥</div>
+  <div class="text mb-5">
+    Se abre un editor en el que puedes introducir comandos (descritos a
+    continuación) para cada confirmación que se fusiona mediante cambio de base
+  </div>
+  <div class="bg-dark text-light p-5 mb-5">
+    Rebase 2cf755d..ee2adc2 onto 2cf755d (9 commands) <br />
+    Commands:<br />
+    p, pick = use commit<br />
+    r, reword = use commit, but edit the commit message<br />
+    e, edit = use commit, but stop for amending<br />
+    s, squash = use commit, but meld into previous commit<br />
+    f, fixup = like "squash", but discard this commit's log message<br />
+    x, exec = run command (the rest of the line) using shell<br />
+    d, drop = remove commit<br />
+  </div>
+  <div class="text">
+    Parece que Fork tiene una interfaz preparada para este comando
+  </div>
+  <img class="my-5" src="assets/images/fork-rebase.png" alt="" />
+  <div class="text hilight">
+    Esto les da la oportunidad de combinar confirmaciones insignificantes,
+    eliminar las obsoletas y asegurarse de que todo lo demás está en orden
+  </div>
+</div>
