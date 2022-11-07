@@ -1,46 +1,36 @@
-// .layout {
-//     background-color: #955757;
-//     color: white;
-//     font-family: 'Primary';
-// }
+.layout {
+    background-color: #955757;
+    color: white;
+    font-family: 'Primary';
 
-//     .info-block {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
+    .info-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+            margin-top: 3rem;
+            font-size: 28px;
+            border-bottom: 2px solid white;
+        }
 
-//         .title {
-//             margin-top: 3rem;
-//             font-size: 28px;
-//             border-bottom: 2px solid white;
-//         }
+        .subtitle {
+            font-size: 24px;
+            margin-top: 1rem;
 
-//         .subtitle {
-//             font-size: 24px;
-//             margin-top: 1rem;
-
-//         }
-//         .text{
-//         max-width: 700px;
-//         }
-//         img{
-//         width: 50%;
-//         }
-//     }
-
-//     code {
-//         padding: 20px;
-//         background-color: black;
-//         color: white;
-//         border-radius: 5px;
-//     }
-
-// .hilight{
-//     border: 3px solid rgb(94, 174, 94);
-//     background-color: rgb(94, 174, 94);
-//     border-radius: 5px;
-//     padding: 3rem;
-//     margin-bottom: 200px;
-// }
-
+        }
+        .text{
+        max-width: 700px;
+        }
+        img{
+        width: 50%;
+        }
+    }
+.hilight{
+    border: 3px solid rgb(94, 174, 94);
+    background-color: rgb(94, 174, 94);
+    border-radius: 5px;
+    padding: 3rem;
+    margin-bottom: 200px;
+}
+}
