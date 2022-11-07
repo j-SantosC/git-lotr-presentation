@@ -1,0 +1,30 @@
+<div class="info-block reset-sauron layout">
+    <h3 class="title">Reset, Revert y Checkout con Sauron</h3>
+    <h3 class="subtitle">Reset</h3>
+    <div class="text "> Para deshacer cambios que no han sido compartidos con nadie más</div>
+    <div class=" code">
+        git reset HEAD~2
+    </div>
+    <ul style="max-width:400px ;">
+        <li>--soft – The staged snapshot and working directory are not altered in any way.</li>
+        <li>--mixed – The staged snapshot is updated to match the specified commit, but the working directory is not
+            affected. This is the default option. (por defecto)</li>
+        <li>--hard – The staged snapshot and the working directory are both updated to match the specified commit.
+        </li>
+    </ul>
+    <div class="text my-3">Tambien funciona a nivel de archivo! Pude estar interesante 🤔</div>
+    <div class="my-4 code">
+        git reset HEAD~2 foo.ts
+    </div>
+    <h3 class="subtitle">Checkout</h3>
+    <div class="text ">Puede ser usado a nivel de rama , commit o archivo</div>
+    <div class="text ">Útil para revisar viejos commits</div>
+    <div class="text">OJITO - DETACHED HEAD 🫠❕❕</div>
+    <img src="assets/images/detached-head.svg" class="my-5" style="height:450px ;" alt="">
+    <div class="text my-3">always create a new branch before adding commits to a detached HEAD</div>
+    <h3 class="subtitle">💚 Revert 💚</h3>
+    <div class="text">Crea un nuevo comit invirtiendo los cambios del commit señalado</div>
+    <div class="text">El únnico Public friendly</div>
+    <img src="assets/images/revert.svg" alt="" class="my-5">
+
+</div>
